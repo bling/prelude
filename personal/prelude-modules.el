@@ -18,5 +18,5 @@
 ;; (require 'prelude-ruby)
 ;; (require 'prelude-scala)
 (require 'prelude-scheme)
-;; (require 'prelude-scss)
+(require 'prelude-scss)
 (require 'prelude-xml)

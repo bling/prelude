@@ -1,4 +1,8 @@
-(prelude-ensure-module-deps '(evil evil-leader))
+(prelude-ensure-module-deps
+  '(evil
+    evil-numbers
+    evil-leader
+    surround))
 
 (evil-mode 1)
 (require'evil-leader)
@@ -8,7 +12,7 @@
 (evil-leader/set-key "v" 'split-window-horizontally)
 (evil-leader/set-key "s" 'split-window-vertically)
 
-(define-key evil-normal-state-map (kbd "C-p") 'projectile-find-file)
+(define-key evil-normal-state-map (kbd "C-p") 'helm-prelude)
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
 
 (define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
